@@ -1,0 +1,45 @@
+body{
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    display: grid;
+    justify-content: center;
+}
+
+main{
+    background-color: yellow;
+    width: 100vh;
+    height: 90vh;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    grid-template-rows: 100px 50px 1fr 180px;
+    grid-template-columns: 500px ;
+}
+
+.logo1{
+    height: 100px;
+}
+
+.name{
+    height: 50px;
+}
+
+.picture{   
+    width: 500px;
+    height: 300px;
+    border: 5px solid black;
+    box-sizing: border-box;
+    background-image: 500px 300px;
+}
+
+.main__picture{
+    width: 490px;
+    height: 290px;
+}
+
+.information{
+    border: 5px solid black;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
