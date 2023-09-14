@@ -17,11 +17,14 @@
            <h1>Choose your Pokemon</h1>
         </div>
 
-        <div class="search_bar">
-            <input type="search" placeholder="search" class="search">
-            <button type="submit" class="submit"></button>
-        </div>
-
+        <form action="pokedex.html" autocomplete="off" class="search_bar">
+            <label>
+                <input type="search" name="name" list="pokemons" placeholder="search" class="pokemon__search">
+                <datalist id="pokemons"></datalist>
+            </label>
+            <button type="submit"></button>
+        </form>
+        
         <div class="list">
             <ul class="pokamon__list"></ul>
             <!-- <div class="spinner"></div> -->
@@ -31,9 +34,9 @@
             <a href="" class="prevPage">Forrige</a> | <a href="offset=20" class="nextPage">Næste</a>
         </div>
         
-        
     </section>
 
     <script src="pokemon.js" defer></script>
+    <script src="/search.js" defer></script>
 </body>
 </html>

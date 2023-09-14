@@ -21,16 +21,16 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${URL.get("name")}`)
     <p class="information">Height: ${data.height}</p>
     <div class="information">
     <p>Stats:</p>
-    <ul>${data.stats.map(elem => 
-        `<li>${elem.stat.name}</li>`).join("")}
+    <ul class="ul_list">${data.stats.map(elem => 
+        `<li class="li_list">${elem.stat.name}</li>`).join("")}
         
     </ul>
     </div>
 
     <div class="information">
     <p>Abilities:</p>
-    <ul>${data.abilities.map(elem => 
-        `<li>${elem.ability.name}</li>`).join("")}
+    <ul class="ul_list">${data.abilities.map(elem => 
+        `<li class="li_list">${elem.ability.name}</li>`).join("")}
     </ul>
     </div>
 
@@ -44,5 +44,7 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${URL.get("name")}`)
         DIV.querySelector(".imgePlaceholder").append(IMG)
     }
 })
+
+
 
 {/* <img src="${data.sprites.other["official-artwork"].front_default}" class="picture"> */}
