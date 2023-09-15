@@ -19,11 +19,11 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${URL.get("name")}`)
     </svg>
     </span>
     <p class="information">Height: ${data.height}</p>
+    <p class="information">Weight: ${data.weight}</p>
     <div class="information">
     <p>Stats:</p>
     <ul class="ul_list">${data.stats.map(elem => 
         `<li class="li_list">${elem.stat.name}</li>`).join("")}
-        
     </ul>
     </div>
 
@@ -33,7 +33,6 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${URL.get("name")}`)
         `<li class="li_list">${elem.ability.name}</li>`).join("")}
     </ul>
     </div>
-
     </section>`
 
     const IMG = new Image()

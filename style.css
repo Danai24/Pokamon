@@ -7,9 +7,12 @@ body{
 }
 
 section{
-    background-color: red;
-    color: white;
-    width: 100vh;
+    /* background-color: red; */
+	background-image: url(https://wallpapers-clan.com/wp-content/uploads/2023/01/pokemon-pikachu-lightning-background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+    color: black;
+    width: 60vh;
     height: 90vh;
     display: grid;
     justify-content: center;
@@ -20,24 +23,28 @@ section{
     grid-template-columns: 500px ;
     border-radius: 50px;
     border: 10px solid #ffcb05;
+	position: relative;
 }
 
 ul, a{
     text-decoration: none;
     list-style-type: none;
-    color: white;
+    color: black;
 	text-align: left;
+	position: relative;
 }
 
 a:hover, li:hover{
     color: white;
     background-color: black;
+}
 
+.prevPage, .nextPage{
+	background-color: none;
 }
 
 .search_bar{
     display: flex;
-
 }
 
 .pokemon__search{
@@ -56,7 +63,7 @@ button{
     border: none;
 }
 
-.spinner {
+/* .spinner {
 	height: 300px;
 	width: 300px;
 	background-color: black;
@@ -116,4 +123,4 @@ button{
 	100% {
 		transform: rotate(360deg);
 	}
-}
+} */
